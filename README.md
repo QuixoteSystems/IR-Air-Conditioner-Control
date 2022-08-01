@@ -17,7 +17,7 @@ English: https://www.quixote.systems/en/control-your-air-conditioner-with-raspbe
 Spanish: https://www.quixote.systems/controla-tu-aire-acondicionado-con-una-raspi/
 
 
-You have to adapt in the script your PATH where you want to save this script and also you have to plug DHT22 sensor to PIN 40 (GPIO 21) or wherever you want but the you have to change:
+You have to adapt in the script your PATH where you want to save this script and also you have to plug DHT22 sensor to PIN 40 (GPIO 21) or wherever you want but then you have to change this line to adapt the GPIO you want to use:
 
 ~~~
 # Initial the dht device, with data pin connected to PIN 40 GPIO 21:
