@@ -7,7 +7,7 @@ Stuff you need:
 
 - Raspberry Pi (I did with a 4 B)
 - IR Remote Shield v1.0 Hat
-- SD card, power supply, case...
+- microSD card, power supply, case...
 
 More info about how make the project (in spanish): https://www.quixote.systems/controla-tu-aire-acondicionado-con-una-raspi/
 
