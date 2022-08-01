@@ -30,7 +30,7 @@ GPIO.output(26, GPIO.HIGH)
 dhtDevice = adafruit_dht.DHT22(board.D21)
 
 # Initial Log
-logger.info('Se inicia la ejecuccion del Sistema Automatico de AA:')
+logger.info('AA script started:')
 
 # you can pass DHT22 use_pulseio=False if you wouldn't like to use pulseio.
 # This may be necessary on a Linux single board computer like the Raspberry Pi,
@@ -41,20 +41,20 @@ while True:
     try:
         temperature = dhtDevice.temperature
         humidity = dhtDevice.humidity
-        logger.info(f"Temperatura: {temperature} C -  Humedad: {humidity}% ")
+        logger.info(f"Temperature: {temperature} C -  Humidity: {humidity}% ")
 
         if GPIO.gpio_function(26) == 1:
            GPIO.setup(26, GPIO.OUT)
            GPIO.output(26, GPIO.HIGH)
-           logger.warning("Pin 26 se ha cambiado a OUT y a 1 --> 3V")
+           logger.warning("Pin 26 changed to OUT also the value is 1 --> 3V")
 
         if temperature <= 25.0:
-           logger.info('Temperatura BAJA: se apaga el aire acondicionado')
+           logger.info('COLD Temperature: switch Off AA')
            os.system(apagar)
            time.sleep(6000.0)
 
         elif temperature >= 28.0:
-           logger.info('Temperatura ALTA: se enciende el aire acondicionado')
+           logger.info('HOT Temperature: switch Off AA')
            os.system(encender)
            time.sleep(6000.0)
 
