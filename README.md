@@ -1,7 +1,7 @@
 # IR- Air Conditioner Automatic Control
-Simple Script to Control automatically your AC from a Raspberry Pi  with IR Transmitter Hat Expansion
+Simple Script to Control automatically your AC from a Raspberry Pi  with IR Transmitter Hat Expansion.
 
-Simple script to control your Air Conditioner, specially made to keep fresh a CPD. You can keep in the room a steady fresh temperature about 25ºC. This script thanks to the IR hat switch off and switch on the Air Conditioner when detect that the temperature is high or cold enough.
+Simple Python script to control your Air Conditioner, specially made to keep fresh your CPD. You can keep the room a steady fresh temperature about 25ºC. This script thanks to the IR hat switch off and switch on the Air Conditioner when detect that the temperature is high or cold enough.
 
 Stuff you need:
 
