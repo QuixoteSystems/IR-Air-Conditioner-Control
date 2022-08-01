@@ -16,7 +16,7 @@ bajar_temp = 'irsend SEND_ONCE mitsubishi DOWN_TEMP'
 mostrar_comandos = 'irsend LIST mitsubishi ""' 
 
 # Create LOG file
-logging.basicConfig(filename='/home/idassa/ac_ir_control.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='/YOUR/PATH/ac_ir_control.log', filemode='a', format='%(asctime)s - %(levelname)s - %(message)s')
 
 #Let us Create an object
 logger=logging.getLogger('server_logger')
